@@ -1,7 +1,7 @@
 /* All odd numbered elements: a light red/pink background, and a list of fonts containing Verdana and DejaVu Sans with sans-serif as a fallback */
 .odd-number{
-    background-color:lightcoral;
-    font-family: Verdana, sans-serif;
+    background-color:rgb(255, 167, 167);
+    font-family: Verdana, "DejaVu Sans",sans-serif;
 }
 
 /* The second element: blue text and a font size of 36px */
@@ -11,13 +11,23 @@
 }
 
 /* The third element: in addition to the styles for all odd numbered elements, add a font size of 24px */
-#third-element{
+.adjust-font-size{
     font-size: 24px;
 }
 
 /* The fourth element: a light green background, a font size of 24px, and bold */
 #fourth-element{
-    background-color: lightgreen;
-    font-size: 24px;
+    background-color: hsl(120, 100%, 75%);
     font-weight: bold;
 }
+
+
+/*
+    In the id selector 'four' below, we could have also
+    added a rule to set the font size to 24px.
+
+    However, since the elements 'Number 3' and 'Number 4'
+    in the HTML file share the same font size, we reused
+    the 'adjust-font-size' class above to help reduce
+    duplicate code.
+*/
